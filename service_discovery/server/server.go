@@ -5,13 +5,13 @@ import (
         "fmt"
 
         "go-micro.dev/v5"
-        "microservice-using-golang/service_discovery/server/model"
+        "microservice-using-golang/service_discovery/model"
 )
 
 type VegetableMarket struct{}
 
-func (g *VegetableMarket) UpdatePrice(ctx context.Context, req *PriceUpdateResponse, rsp *PriceUpdateResponse) error {
-        resp.Message = fmt.Sprintf("Price of %s updated to %f", req.Name, req.Price)
+func (g *VegetableMarket) UpdatePrice(ctx context.Context, req *model.PriceUpdateRequest, rsp *model.PriceUpdateResponse) error {
+        rsp.Message = fmt.Sprintf("Price of %s updated to %f", req.Name, req.Price)
         return nil
 }
 
