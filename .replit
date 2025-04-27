@@ -1,0 +1,7 @@
+[nix]
+channel = "stable-24_05"
+packages = ["go"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
