@@ -1,6 +1,6 @@
 [nix]
 channel = "stable-24_05"
-packages = ["go"]
+packages = ["go", "gotools"]
 
 [[ports]]
 localPort = 8080
